@@ -1,23 +1,18 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
 import React from 'react'
-import {NavigationContainer} from '@react-navigation/native'
-import Root from './navigation'
+import ConnectedApp from './ConnectedApp'
 
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Root />
-    </NavigationContainer>
-  )
+import Store from './store'
+
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Store>
+          <ConnectedApp />
+        </Store>
+      </>
+    )
+  }
 }
 
 export default App
