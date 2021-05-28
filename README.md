@@ -1,7 +1,3 @@
-# Rinkl: Mobile App
-
-This is the React Native mobile app for Rinkl.
-
 ## Install
 
 Clone the project from github and install dependencies 
