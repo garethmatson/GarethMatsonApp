@@ -1,0 +1,9 @@
+export const types = {
+  FETCH_USERS_REQUEST: 'POSTS/FETCH_USERS_REQUEST',
+  FETCH_USERS_SUCCESS: 'POSTS/FETCH_USERS_SUCCESS',
+  FETCH_USERS_FAILURE: 'POSTS/FETCH_USERS_FAILURE',
+}
+
+export const userActions = {
+  fetchUsers: () => ({type: types.FETCH_USERS_REQUEST}),
+}

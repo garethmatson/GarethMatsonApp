@@ -1,12 +1,7 @@
 import {IAction} from 'src/actions'
 import {types} from 'src/actions/posts'
+import {Post} from 'src/components/posts/types'
 
-type Post = {
-  userId: number
-  id: number
-  title: string
-  body: string
-}
 export interface IPostsState {
   posts: Post[] | null
 }
@@ -23,7 +18,7 @@ export default function posts(
     case types.FETCH_POSTS_SUCCESS: {
       return {
         ...state,
-        posts: action.payload,
+        posts: [...action.payload],
       }
     }
     default: {

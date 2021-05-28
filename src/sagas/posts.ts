@@ -9,7 +9,7 @@ function* handleFetchPosts() {
 
     yield put({
       type: types.FETCH_POSTS_SUCCESS,
-      posts: posts,
+      payload: posts,
     })
   } catch (e) {
     yield put({type: types.FETCH_POSTS_FAILURE})
